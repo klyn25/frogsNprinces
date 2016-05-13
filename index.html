@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="cowsNbulls.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!--<div id="topBar"><h2>Some Name Here</h2></div>-->
+
+
+<header>
+    	<h1>Frogs &amp; Princes</h1>
+        <div id="logo"><img src="images/logo.gif"></div>
+    </header>
+   <div id="wrapper"> 
+    <aside>
+    	<h2>Rules</h2>
+        <ul>
+        	<li>Only one of each number, no duplicates</li>
+            <li>Matching number and location results in a Prince: <br><img src="images/bull.gif"></li>
+            <li>Matching number but not location results in a Frog:<br> <img src="images/cow.gif"></li>
+            <li></li>
+    	</ul>
+    </aside>
+    
+    <div id="content">
+        
+        <div id="winner"></div>
+        <form id="form1" name="form1" method="post">
+            <div id="error1"></div>
+          <p>
+            
+            <input type="number" name="num1" id="num1" min="1" max="9" size="3" class="hidden" required>
+          
+            
+            <input type="number" name="num2" id="num2" min="1" max="9" size="3" class="hidden" required>
+          
+            
+            <input type="number" name="num3" id="num3" min="1" max="9" size="3" class="hidden" required>
+          
+            
+            <input type="number" name="num4" id="num4" min="1" max="9" size="3" class="hidden" required>
+         </p>
+          <p>
+            <input type="submit" name="submit" id="submit" value="Submit" class="hidden">
+            <input type="button" name="start" id="start" value="Start">
+          </p>
+        </form>
+        <h2>Frogs:</h2>
+        <h2>Your Guess:</h2>
+        <h2>Princes:</h2>
+        <div id="results">
+        	
+        	<div id="cows"></div>
+            <div id="guesses"></div>
+            <div id="bulls"></div>
+        
+        </div>
+	</div><!-- end content -->
+	
+</div><!-- end wrapper -->
+<footer>
+    <p>&copy;2015 ggg</p>
+    </footer>
+</body>
+</html>
